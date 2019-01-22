@@ -13,7 +13,6 @@ eureka:
     lease-expiration-duration-in-seconds: 5
     instance-id: ${eureka.instance.ip-address}:${server.port}
     ip-address: aitieta.com
-
 server:
   port: 8893
 zuul:
