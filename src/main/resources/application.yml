@@ -4,7 +4,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://root:123456@eureka/eureka/
+      defaultZone: http://root:123456@eureka1/eureka/eureka/
   instance:
     prefer-ip-address: true
 server:
