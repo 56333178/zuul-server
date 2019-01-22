@@ -20,16 +20,6 @@ zuul:
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 10000
-#  host:
-#      connect-timeout-millis: 10000
-#      socket-timeout-millis: 50000
-#hystrix:
-#  command:
-#    default:
-#      execution:
-#        isolation:
-#          thread:
-#            timeoutInMilliseconds: 40000
 hystrix:
   command:
     default:
@@ -38,4 +28,4 @@ hystrix:
           thread:
             timeoutInMilliseconds: 40000
         timeout:
-          enabled: false
+          enabled: true
