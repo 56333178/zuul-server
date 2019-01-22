@@ -21,11 +21,11 @@ zuul:
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 10000
-ribbon:
-  ReadTimeout:  10000
-  ConnectTimeout:  10000
-  eureka:
-    enabled: true
+#ribbon:
+#  ReadTimeout:  10000
+#  ConnectTimeout:  10000
+#  eureka:
+#    enabled: true
 #hystrix:
 #  command:
 #    default:
