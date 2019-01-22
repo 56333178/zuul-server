@@ -5,6 +5,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://root:123456@aitieta.com:8888/eureka/,http://root:123456@aitieta.com:8887
+    eureka-server-read-timeout-seconds: 10000
   instance:
     prefer-ip-address: true
 server:
