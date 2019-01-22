@@ -4,7 +4,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://root:123456@localhost:8888/eureka/
+      defaultZone: http://root:123456@eureka1:8888/eureka/
   instance:
     prefer-ip-address: true
 server:
@@ -17,3 +17,6 @@ zuul:
     api-b:
       path: /api-demo2/**
       service-id: demo2-server
+    api-b:
+          path: /eureka/**
+          service-id: register-center
