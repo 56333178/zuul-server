@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: zuul-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:8888/eureka/
+  instance:
+    prefer-ip-address: true
+server:
+  port: 8893
+zuul:
+  routes:
+    api-a:
+      path: /api-demo/**
+      service-id: demo-server
+    api-b:
+      path: /api-demo2/**
+      service-id: demo2-server
