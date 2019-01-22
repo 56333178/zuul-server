@@ -18,8 +18,11 @@ zuul:
       path: /api-demo2/**
       service-id: demo2-server
   host:
-      connect-timeout-millis: 10000
-      socket-timeout-millis: 50000
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 10000
+#  host:
+#      connect-timeout-millis: 10000
+#      socket-timeout-millis: 50000
 #hystrix:
 #  command:
 #    default:
@@ -31,5 +34,8 @@ hystrix:
   command:
     default:
       execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 40000
         timeout:
           enabled: false
