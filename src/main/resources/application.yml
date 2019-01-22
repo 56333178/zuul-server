@@ -5,14 +5,15 @@ eureka:
   client:
     service-url:
       defaultZone: http://root:123456@aitieta.com:8888/eureka/,http://root:123456@aitieta.com:8887/eureka/
-    eureka-server-read-timeout-seconds: 10000
-    eureka-service-url-poll-interval-seconds: 10
+#    eureka-server-read-timeout-seconds: 10
+#    eureka-service-url-poll-interval-seconds: 10
   instance:
     prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 5
+#    lease-renewal-interval-in-seconds: 5
+#    lease-expiration-duration-in-seconds: 5
     instance-id: ${eureka.instance.ip-address}:${server.port}
     ip-address: aitieta.com
+    initial-status: starting
 server:
   port: 8893
 zuul:
