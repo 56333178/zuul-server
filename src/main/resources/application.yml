@@ -18,20 +18,20 @@ zuul:
     api-b:
       path: /api-demo2/**
       service-id: demo2-server
-  host:
-    connect-timeout-millis: 10000
-    socket-timeout-millis: 10000
-ribbon:
-  ReadTimeout:  10000
-  ConnectTimeout:  10000
-  eureka:
-    enabled: true
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 40000
-        timeout:
-          enabled: true
+#  host:
+#    connect-timeout-millis: 10000
+#    socket-timeout-millis: 10000
+#ribbon:
+#  ReadTimeout:  10000
+#  ConnectTimeout:  10000
+#  eureka:
+#    enabled: true
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 40000
+#        timeout:
+#          enabled: true
