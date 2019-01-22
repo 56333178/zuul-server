@@ -18,9 +18,9 @@ zuul:
     api-b:
       path: /api-demo2/**
       service-id: demo2-server
-#  host:
-#    connect-timeout-millis: 10000
-#    socket-timeout-millis: 10000
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 10000
 #ribbon:
 #  ReadTimeout:  10000
 #  ConnectTimeout:  10000
