@@ -4,7 +4,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://root:123456@aitieta.com:8888/eureka/,http://root:123456@aitieta.com:8887/eureka/
+      defaultZone: http://root:123456@eureka1:8888/eureka/,http://root:123456@eureka2:8887/eureka/
 #    eureka-server-read-timeout-seconds: 10
 #    eureka-service-url-poll-interval-seconds: 10
   instance:
